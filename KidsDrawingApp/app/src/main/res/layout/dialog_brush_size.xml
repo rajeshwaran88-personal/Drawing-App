@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/superSmallBrush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="super_small_brush"
+        android:src="@drawable/supersmall"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/smallBrush"
+        />
+
+    <ImageButton
+        android:id="@+id/smallBrush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="small_brush"
+        android:src="@drawable/small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/mediumBrush"
+        />
+
+    <ImageButton
+        android:id="@+id/mediumBrush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="medium_brush"
+        android:src="@drawable/medium"
+        app:layout_constraintTop_toBottomOf="@id/smallBrush"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/largeBrush"
+        />
+
+    <ImageButton
+        android:id="@+id/largeBrush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="large_brush"
+        android:src="@drawable/large"
+        app:layout_constraintTop_toBottomOf="@id/mediumBrush"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
